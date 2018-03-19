@@ -1,0 +1,44 @@
+<section class="text-center" id="publications">
+	<div class="section-header py-5">
+		<h1 class="text-uppercase">Publications</h1>
+		<div class="colored-line"></div>
+	</div>
+	<div class="section-body">
+		<div class="container py-5"></div>
+	</div>
+</section>
+
+<section class="py-5">
+	<div class="container text-center">
+		<div id="logos" class="row my-5">
+			<div class="col-12 col-sm-6 col-md-3">
+				<a href="https://orcid.org/0000-0001-8053-9249" target="parent"><img src="assets/img/orcid-logo.png" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 py-4">
+				<a href="https://scholar.google.co.uk/citations?hl=en&user=WfN8V-wAAAAJ" target="parent"><img src="assets/img/scholar_logo_24dp.png" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<a href="https://www.researchgate.net/profile/Hermes_Gadelha2/" target="parent"><img src="assets/img/research-gate-logo.png" /></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<a href="https://pure.york.ac.uk/portal/en/Hermes.Gadelha%40york.ac.uk" target="parent"><img src="assets/img/york-charcoal-logo.png" /></a>
+			</div>
+		</div>
+		<div class="row pb-5 pl-3 text-left">
+			<ul class="list-unstyled">
+				<li ng-repeat="group in groups">
+					<h2>{{group.label}}</h2>
+					<ul class="condensed">
+						<li class="mb-4" ng-repeat="p in group.pubs">
+							<p><a href="{{p.link}}" target="_blank">{{p.title}}</a></p>
+							<p>{{p.authors}}</p>
+							<p>{{p.detail}}</p>
+							<p>{{p.subDetail}}</p>
+							<!--span class="badge badge-pill badge-secondary" title="Impact Factor (IF)">{{p.if}}</span-->
+							<span class="altmetric-embed" data-badge-popover="right" data-badge-type="1" data-doi="{{p.altmetric}}"></span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+</section>

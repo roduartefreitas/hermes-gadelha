@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="bacanaApp">
+	<head>
+		<title>Laboratory of Dr Hermes Gadêlha</title>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="Dr Hermes Gadêlha laboratory" />
+		<meta name="keywords" content="hermes, gadelha, laboratory, sperm, fertility, math, york, PhD" />
+		<meta name="author" content="Rodrigo Freitas" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/c.css" />
+	</head>
+	<body ng-controller="appController">
+		<header>
+			<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img class="logo mr-3" src="assets/img/logo.png" alt="" />
+						<span class="brand-title">Dr Hermes Gadêlha</span>
+					</a>
+					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#!/">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/aboutMe">About me</a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Research
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a href="#!/ethos" class="dropdown-item">Ethos</a>
+									<a href="#!/projects" class="dropdown-item">Projects</a>
+									<a href="#!/publications" class="dropdown-item">Publications</a>
+									<a href="#!/collaborators" class="dropdown-item">Collaborators</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/press">Press</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/events">Events</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/opportunities">Opportunities</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/atelier">Atelier</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/contactUs">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main ng-view autoscroll></main>
+
+		<section class="container py-5">
+			<!-- mailing list -->
+			<form name="mailForm">
+				<h2 class="text-center mt-2 text-uppercase">Join our mailing list</h2>
+				<div class="colored-line mb-5"></div>
+				<div class="row mt-4" id="mailing">
+					<div class="col-sm-12 col-md-5">
+						<strong>Interested in receiving our notifications for opportunities?</strong>
+					</div>
+					<div class="col-sm-10 col-md-5">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="email" class="form-control" placeholder="type your best e-mail" ng-model="mail" required />
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-2">
+						<button class="btn btn-block btn-custom" ng-click="sendMail(mail);" ng-disabled="mailForm.$invalid">send</button>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<footer class="pt-4">
+			<section class="container">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<img src="assets/img/logo.png" alt="">
+						<p class="pt-3">Dr Hermes Gadêlha</p>
+					</div>
+					<div class="col-12 col-md-3">
+						<h4>Address</h4>
+						<p>Dept of Mathematics</p>
+						<p>University of York</p>
+						<p>Heslington, York</p>
+						<p>YO10 5DD, UK</p>
+						<p>Office G/027E</p>
+					</div>
+					<div class="col-12 col-md-3">
+						<h4>Contacts</h4>
+						<p>hermes.gadelha@york.ac.uk</p>
+						<p>Phone: +44 (0) 1904 32 2039</p>
+						<p>Fax: +44 (0) 1904 32 3071</p>
+					</div>
+					<div class="col-12 col-md-3">
+						<h4>Social media</h4>
+						<p><i class="fab fa-twitter-square fa-lg"></i>&nbsp;<a href="https://twitter.com/hermesgadelha">Twitter</a></p>
+						<!--p><i class="fab fa-facebook-square fa-lg"></i>&nbsp;<a href="www.twitter.com/hermesgadelha">Facebook</a></p>
+						<p-><i class="fab fa-youtube fa-lg"></i>&nbsp;<a href="www.twitter.com/hermesgadelha">YouTube</a></p-->
+					</div>
+				</div>
+				<hr />
+				<p class="text-center"><small>© Copyright 2017 Hermes Gadelha - All Rights Reserved</small></p>
+				<p class="text-center"><small>Number of visitors since April 25, 2012:</small>&nbsp;<span class="badge badge-secondary">
+					<!-- Start of StatCounter Code for Microsoft Publisher -->
+					<script type="text/javascript">
+						var sc_project = 7885063;
+						var sc_invisible = 0;
+						var sc_security = "d0db088e";
+						var sc_text = 2;
+					</script>
+					<script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+					<noscript>
+						<div class="statcounter">
+							<a title="godaddy hit counter" href="http://statcounter.com/godaddy_website_tonight/" target="_blank">
+								<img class="statcounter" src="http://c.statcounter.com/7885063/0/d0db088e/0/" alt="godaddy hit counter">
+							</a>
+						</div>
+					</noscript>
+					<!-- End of StatCounter Code for Microsoft Publisher -->
+					</span></p>
+			</section>
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- angular -->
+		<!--script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+		<script type="text/javascript" src="assets/libs/angular/angular-route.min.js"></script-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+		
+		<!--script type="text/javascript" src="assets/libs/ocLazyLoad/ocLazyLoad.require.min.js"></script>
+		<script type="text/javascript" src="assets/libs/ocLazyLoad/ocLazyLoad.min.js"></script-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.require.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/app.js"></script>
+		<script type="text/javascript" src="assets/js/appController.js"></script>
+		<script type="text/javascript" src="assets/js/publicationController.js"></script>
+		<script type="text/javascript" src="assets/js/trilateralController.js"></script>
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!--script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+		<script src="assets/js/c.js"></script>
+	</body>
+</html>

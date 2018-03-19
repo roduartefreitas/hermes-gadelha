@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway|Roboto|Ubuntu|Coustard|Rubik|Tangerine');
+
+/*font-family:'Ubuntu', sans-serif;*/
+/*font-family:'Roboto', sans-serif;*/
+/*font-family:'Montserrat', sans-serif;*/
+/*font-family:'Raleway', sans-serif;*/
+/*font-family:'Lato', sans-serif;*/
+/*font-family:'Open Sans', sans-serif;*/
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+nav.navbar {
+	background-color: #0f7699 !important;
+}
+
+nav a img {
+	width: 30px;
+	height: auto;
+}
+
+.brand-title {
+	font-family: 'Coustard', sans-serif;
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+#mainMenu>ul>li>a {
+		color: #fff;
+		font-family: 'Ubuntu', sans-serif;
+}
+
+#mainMenu>ul>li>a:hover {
+	color: #000;
+}
+
+@media (max-width: 575px) {
+	#mainMenu>ul>li>a {
+		text-align: center;
+		background-color: rgba(255,255,255,0.1);
+		margin-bottom: 1px;
+	}
+}
+
+h1,h2,h3 {
+	font-family: 'Coustard', sans-serif;
+	color: #000;
+}
+
+.of {
+	font-family: 'Tangerine', sans-serif;
+	font-weight: 400;
+	font-size: 4rem;
+	color: grey;
+}
+
+/* h2.no-span {
+	display: table;
+	white-space: nowrap;
+	&:before, &:after {
+	  border-top: 1px solid green;
+	  content: '';
+	  display: table-cell;
+	  position: relative;
+	  top: 0.5em;
+	  width: 45%;
+	}
+	&:before { right: 1.5%; }
+	&:after { left: 1.5%; }
+	} */
+
+h2.no-span::after {
+	left: 1.5%;
+}
+
+h2.no-span::before, h2.no-span::after {
+	border-top: 2px solid #0073CF;
+	content: '';
+	display: table-cell;
+	position: relative;
+	top: 0.5em;
+	width: 45%;
+}
+
+h2.no-span::before {
+	right: 1.5%;
+}
+
+h2.no-span {
+	display: table;
+	white-space: nowrap;
+}
+
+.carousel>.carousel-inner>.carousel-item>.carousel-caption>h3 {
+	text-shadow: 0px 0px 10px #000 !important;
+}
+
+.carousel-caption {
+	bottom: 0rem;
+}
+
+.carousel-caption>h3 {
+	color: #fff;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.carousel-caption>h3 {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption>h3 {
+		font-size: 2.5em;
+	}
+
+	.carousel-caption>p {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.carousel-caption>h3 {
+		font-size: 3em;
+	}
+
+	.carousel-caption>p {
+		font-size: 1.8em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.carousel-caption>h3 {
+		font-size: 4em;
+	}
+
+	.carousel-caption>p {
+		font-size: 2em;
+	}
+}
+
+.carousel-caption>p {
+	line-height: 1.2em;
+}
+
+.carousel-caption>p>span {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.carousel-item {
+	height: 15rem;
+}
+
+.carousel-item>img {
+	min-width: 100%;
+	height: 15rem;
+}
+
+@media (min-width: 768px) {
+	.carousel-item, .carousel-item>img {
+		height: 27rem;
+	}
+}
+
+div.section-body {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+#workshopBanner>div.section-body {
+	background-image: url("../img/bg-call-05.jpg");
+}
+
+#scholarshipBanner>div.section-body {
+	background-image: url("../img/facts-about-sperm.jpg");
+}
+
+div.section-body {
+	min-height: 20em;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+    background: rgba(0, 5, 8, 0.6);
+}
+
+div.section-body .svg-inline--fa {
+	color: #0f7699;
+}
+
+div.section-header h2 {
+	color: #000;
+	/*text-shadow: 0px 0px 10px #000;*/
+}
+
+div.section-header {
+	background: url("../img/br-dust-scratches.png");
+}
+
+div.section-body p {
+	font-size: 1.5em;
+	text-shadow: 0px 0px 10px #000;
+}
+
+main {
+	background: transparent url("../img/bg-main.jpg") repeat scroll left top;
+}
+
+.card-body.icon {
+	margin-top: -50px;
+}
+
+.card-body>a#data {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #0073CF;
+	color: #fff;
+	padding-top: 0.8em;
+	box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+}
+
+@media (max-width: 575px) {
+	div#mailing>div:not(:first-child) {
+		margin-top: 0.8em;
+	}
+}
+
+@media (max-width: 575px) {
+	#news > :not(:first-child) {
+		margin-top: 1.2em;
+	}
+}
+
+footer {
+	background-color: #0f7699;
+	margin: 0px;
+	padding: 2em;
+	color: rgba(255,255,255,0.7);
+	font-family: 'Rubik', sans-serif;
+}
+
+footer p {
+	margin: 0px;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer a {
+	color: inherit;
+}
+
+footer a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+footer img {
+	width: 50px;
+	height: auto;
+}
+
+footer>section>div>div:not(:first-child) {
+	border-left: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+	footer div:not(:first-child) {
+		margin-top: 3em;
+	}
+}
+
+.btn-custom { background-color: hsl(195, 60%, 35%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d95b7", endColorstr="#23748e"); background-image: -khtml-gradient(linear, left top, left bottom, from(#2d95b7), to(#23748e)); background-image: -moz-linear-gradient(top, #2d95b7, #23748e); background-image: -ms-linear-gradient(top, #2d95b7, #23748e); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d95b7), color-stop(100%, #23748e)); background-image: -webkit-linear-gradient(top, #2d95b7, #23748e); background-image: -o-linear-gradient(top, #2d95b7, #23748e); background-image: linear-gradient(#2d95b7, #23748e); border-color: #23748e #23748e hsl(195, 60%, 32.5%); color: #fff !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16); -webkit-font-smoothing: antialiased; }
+
+.colored-line-left, .colored-line-right, .colored-line {
+	background: #0f7699;
+}
+.colored-line {
+	margin: auto;
+}
+.colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line {
+	display: block;
+	width: 80px;
+	height: 2px;
+}
+
+footer .svg-inline--fa {
+	color: #fff;
+}
+
+/*
+.blue-light {
+	background-color: #6AADE;
+}
+*/
+
+#opportunities .section-body {
+	background-image: url("../img/opportunities-top.jpg");
+}
+
+#events .section-body {
+	background-image: url("../img/academic-events-top.jpg");
+}
+
+#eventTrilateralWorkshop .section-body {
+	background-image: url("../img/events-workshop.jpg");
+}
+
+#logos img {
+	width: 200px;
+	height: auto;
+}
+
+#aboutMe .section-body {
+	background-image: url("../img/hermes-gadelha.png");
+}
+
+div.polaroid {
+	width: 220px;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+}
+
+.polaroid img {
+	width: 200px;
+}
+
+div.label {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.condensed p, 
+.condensed span {
+	margin: 0px;
+}
+
+.altmetric-embedd imgg {
+	width: 110px;
+	height: 20px;
+}
+
+#publications .section-body {
+	background-image: url("../img/top-pub.jpg");
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-orange {
+	background-color: rgb(252,113,63);
+	color: #000;
+}
+
+.bg-orange:hover {
+	background-color: rgba(252,113,63, .9);
+	color: #fff;
+}
+
+a.bg-orange .svg-inline--fa {
+	color: #000
+}
+
+#scheduleTable td:first-child {
+	font-weight: bold;
+	color: #000;
+}
+
+#scheduleTable td {
+	vertical-align: middle !important;
+}
+
+.text-dark-blue {
+	color: #004085;
+}
+
+.bd-callout {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #eee;
+	border-left-width: 1px;
+	border-left-color: rgb(238, 238, 238);
+	border-left-width: .25rem;
+	border-radius: .25rem;
+	box-sizing: border-box;
+}
+
+.bd-callout-info {
+	border-left-color: #0f7699;
+	background-color: #fff;
+}
+
+.talk-blink {
+	-webkit-animation-name: talk; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: talkBlinkAnimation;
+    animation-duration: 5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes talkBlinkAnimation {
+    0% {background-color: rgb(255, 200, 98)}
+	25% {background-color: rgb(255, 200, 98)}
+    100% {background-color: transparent}
+}
+
+/* Standard syntax */
+@keyframes talkBlinkAnimation {
+    0% {background-color: rgb(255, 200, 98)}
+	25% {background-color: rgb(255, 200, 98)}
+    100% {background-color: transparent}
+}
